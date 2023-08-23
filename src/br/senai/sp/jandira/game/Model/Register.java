@@ -29,7 +29,7 @@ public class Register {
         output.PrintEnemy(enemy);
     }
 
-    public void PlayerRegister(){
+    public Player PlayerRegister(){
         System.out.println("-------------------------------------------");
         System.out.println("------------   Cadastro Player  -----------");
         System.out.print("Qual é  seu nome: ");
@@ -43,10 +43,11 @@ public class Register {
             output.PrintPlayer(player);
         }
 
+        return player;
 
     }
 
-    public void EnemyRegister(){
+    public Enemy EnemyRegister(){
         System.out.println("-------------------------------------------");
         System.out.println("------------   Cadastro Enemy  -----------");
         System.out.print("Qual é  seu nome: ");
@@ -59,6 +60,9 @@ public class Register {
         if (avaliaAmbos != 1) {
             output.PrintEnemy(enemy);
         }
+
+        return enemy;
+
     }
 
     public void Decision(){
@@ -92,9 +96,6 @@ public class Register {
         if (continuar == 1){
             Decision();
         }
-
-
-
 
     }
 }
