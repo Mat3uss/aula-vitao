@@ -1,6 +1,7 @@
 package br.senai.sp.jandira.game.Model;
 
-public class Scenario {
+public class
+Scenario {
 
     public String Scenario(int scenarioOption){
 
